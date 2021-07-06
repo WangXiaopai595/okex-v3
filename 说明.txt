@@ -1,0 +1,3 @@
+sql文件导入数据库
+在config里面填好配置参数
+运行命令：nohup python3 -u main.py 2>&1 &
