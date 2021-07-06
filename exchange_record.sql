@@ -11,7 +11,7 @@
  Target Server Version : 100509
  File Encoding         : 65001
 
- Date: 01/07/2021 15:14:10
+ Date: 06/07/2021 10:03:40
 */
 
 SET NAMES utf8mb4;
@@ -31,8 +31,8 @@ CREATE TABLE `exchange_record`  (
   `exchange_rate` float(7, 4) NOT NULL COMMENT '交易比例',
   `btc_price` decimal(15, 6) NOT NULL COMMENT 'btc当前价格',
   `total_balance` decimal(15, 6) NOT NULL COMMENT '当前账户总价值',
-  `created_time` int(11) NULL DEFAULT NULL,
+  `created_time` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 32 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_croatian_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_croatian_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
